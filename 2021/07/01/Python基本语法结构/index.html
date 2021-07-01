@@ -4,15 +4,22 @@
   <meta charset="utf-8">
   
   
-  <title>Python Tutorial</title>
+  <title>2.Python基本语法结构 | Python Tutorial</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Python Tutorial">
-<meta property="og:url" content="https://jiaqingnie.github.io/python-tutorial/index.html">
+  <meta name="description" content="2.1 条件语句假如现在我们要根据成绩来进行等级划分，90分及以上为A，80分到89分为B，70分到79分为C，60到69分为D，60分以下为F（假设成绩区间为0到100，且所有的成绩均为整数）。成绩由用户手动输入，我们需要输出其对应的等级。该情景对应的代码为： 12345grade &#x3D; int(input(&quot;请输入成绩： &quot;))level &#x3D; &quot;&quot;# TO">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2.Python基本语法结构">
+<meta property="og:url" content="https://jiaqingnie.github.io/python-tutorial/2021/07/01/Python%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E7%BB%93%E6%9E%84/index.html">
 <meta property="og:site_name" content="Python Tutorial">
+<meta property="og:description" content="2.1 条件语句假如现在我们要根据成绩来进行等级划分，90分及以上为A，80分到89分为B，70分到79分为C，60到69分为D，60分以下为F（假设成绩区间为0到100，且所有的成绩均为整数）。成绩由用户手动输入，我们需要输出其对应的等级。该情景对应的代码为： 12345grade &#x3D; int(input(&quot;请输入成绩： &quot;))level &#x3D; &quot;&quot;# TO">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://raw.githubusercontent.com/JiaqingNie/image/main/grade-5118130.png">
+<meta property="article:published_time" content="2021-07-01T03:46:22.650Z">
+<meta property="article:modified_time" content="2021-07-01T12:37:20.870Z">
 <meta property="article:author" content="Jiaqing Nie">
+<meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/JiaqingNie/image/main/grade-5118130.png">
   
     <link rel="alternate" href="/python-tutorial/atom.xml" title="Python Tutorial" type="application/atom+xml">
   
@@ -69,133 +76,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Hello Python" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/python-tutorial/2021/07/01/Hello%20Python/" class="article-date">
-  <time class="dt-published" datetime="2021-07-01T03:46:22.650Z" itemprop="datePublished">2021-07-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/python-tutorial/2021/07/01/Hello%20Python/">1.Hello Python</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Python 被创立于上世纪90年代初，经历十多年的时间逐渐成为了最受欢迎的程序设计语言之一。据说是创始人Guido为了打发圣诞节假期的无聊时光而开发出来的编程语言（emmmm。。。。）对于第一次接触Python的初学者，就让我们以Python的方式跟它打个招呼吧！</p>
-<h3 id="1-1-输出语句"><a href="#1-1-输出语句" class="headerlink" title="1.1 输出语句"></a>1.1 输出语句</h3><ol>
-<li>打开Jupyter notebook，在你喜欢的目录下，点击右侧”New”， “Python 3”。</li>
-<li>创建完成后，在第一行格中输入以下代码：</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Hello Python!&quot;</span>) </span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>点击菜单栏中间的运行按钮，运行结果如下：<img src="https://raw.githubusercontent.com/JiaqingNie/image/main/%E6%88%AA%E5%B1%8F2021-06-22%2019.29.52.jpg"></li>
-</ol>
-<p>此时，结果处会打印出 Hello Python！</p>
-<p>print语句，顾名思义，可以将某个”东西”直接显示在屏幕上，这个”东西”可以是数字，计算表达式，变量，字符串，函数或方法的返回结果，等等。以下是几个不同的例子：</p>
-<p><img src="https://raw.githubusercontent.com/JiaqingNie/image/main/%E6%88%AA%E5%B1%8F2021-06-22%2019.51.29.jpg" alt="截屏2021-06-22 19.51.29"></p>
-<p>print语句可于Debug。想要判断自己代码在某个位置是否按照自己的预期来运行，便可以将某个变量或函数返回值打印出来。</p>
-<h3 id="1-2-变量和赋值语句"><a href="#1-2-变量和赋值语句" class="headerlink" title="1.2 变量和赋值语句"></a>1.2 变量和赋值语句</h3><p>相信读者在数学当中学习过变量的含义，其在Python中的含义姑且也可以先这样理解。通俗来说，变量就是用来储存数值的——毕竟我们不可能把所有的计算结果都一步算出。为了让变量能够储存数值，我们需要通过赋值语句来实现。</p>
-<p>赋值语句的格式为：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># &lt;变量&gt; = &lt;数值&gt;</span></span><br><span class="line"><span class="comment"># e.g.</span></span><br><span class="line">a = <span class="number">1</span></span><br><span class="line">b = <span class="number">2</span></span><br><span class="line">var1 = <span class="number">3</span></span><br></pre></td></tr></table></figure>
-
-<p>赋值语句中的 “=” 叫做赋值符号，等号左侧为被赋值的变量，右侧为被赋予的值。注意，该顺序不可颠倒！以下赋值语句则为语法错误：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 错误的赋值</span></span><br><span class="line"><span class="number">1</span> = a</span><br><span class="line"><span class="number">2</span> = b</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://raw.githubusercontent.com/JiaqingNie/image/main/%E6%88%AA%E5%B1%8F2021-06-22%2020.53.37.jpg"></p>
-<p>我们不仅可以给变量赋予数值，还可以给把一个变量的值赋予另外一个变量，或者把一个函数或方法的返回值赋予某个变量，比如：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 变量间的赋值</span></span><br><span class="line">a = <span class="number">1</span></span><br><span class="line">b = a</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将函数返回值赋值给变量</span></span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line">c = random.random()</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>思考题：</p>
-<p>给定变量 x, y，二者代表不同的数值，试通过代码交换两者的数值。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line">x = random.random()</span><br><span class="line">y = random.random()</span><br><span class="line">pre_x = x</span><br><span class="line">pre_y = y</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;x 的数值为：&quot;</span> + <span class="built_in">str</span>(x))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;y 的数值为：&quot;</span> + <span class="built_in">str</span>(y))</span><br><span class="line"><span class="comment"># <span class="doctag">TODO:</span> 交换x和y的数值</span></span><br><span class="line"><span class="comment"># Hint: 通过再引入一个变量来实现</span></span><br><span class="line"><span class="comment"># start</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># end</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;x 的数值应为：&quot;</span> + <span class="built_in">str</span>(pre_y) + <span class="string">&quot;实际为：&quot;</span> + <span class="built_in">str</span>(x))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;y 的数值应为：&quot;</span> + <span class="built_in">str</span>(pre_x) + <span class="string">&quot;实际为：&quot;</span> + <span class="built_in">str</span>(y))</span><br></pre></td></tr></table></figure></li>
-</ul>
-<p>Python因其强大之处，还同时支持通过连等号的方式把同一个值一次性赋值给多个变量，也支持同时给多个变量同时赋予不同的值。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 把1同时赋给a和b</span></span><br><span class="line">a = b = <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 将2赋值给c，3赋值给d</span></span><br><span class="line">c, d = <span class="number">2</span>, <span class="number">3</span></span><br></pre></td></tr></table></figure>
-
-<p>现在再去回看上边的思考题，是不是又有了新的想法呢？</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x, y = y, x</span><br></pre></td></tr></table></figure>
-
-<h3 id="1-3-输入语句"><a href="#1-3-输入语句" class="headerlink" title="1.3 输入语句"></a>1.3 输入语句</h3><p>我们编写的程序本身往往需要用户来手动输入某些数据从而开始后续的计算，因此掌握输入语句也尤为重要。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 将用户输入的结果赋值给name变量</span></span><br><span class="line">name = <span class="built_in">input</span>(<span class="string">&quot;请输入你的名字&quot;</span>)</span><br><span class="line"><span class="built_in">print</span> (<span class="string">&quot;Hello &quot;</span> + name + <span class="string">&quot;!&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<p>input函数的作用就是提示用户输入，并返回其输入的结果，函数括号内的内容为自定义的提示词。</p>
-<p>运行的时候，会有一个文本输入框提示输入你的名字，输入”张三”，回车，运行结果为：</p>
-<p><img src="https://raw.githubusercontent.com/JiaqingNie/image/main/%E6%88%AA%E5%B1%8F2021-06-23%2014.47.21.jpg"></p>
-<p>请注意，在Python3.X的版本中，input的结果会默认当作字符串来处理，如果需要输入一个数或别的数据类型，需要进行类型的转换！</p>
-<h3 id="1-4-数据类型与类型转换"><a href="#1-4-数据类型与类型转换" class="headerlink" title="1.4 数据类型与类型转换"></a>1.4 数据类型与类型转换</h3><p>在一些对数据类型比较严格的编程语言中（例如 C 和 Java），变量在使用前必须声明其类型，并且类型一经声明便不可再修改，以此来提高运行的速度。Python在这方面做了权衡，牺牲了一定的运行速度，换取了更加灵活的语法。在Python中，变量在使用前无需声明其类型，可以直接赋值使用。并且变量的类型可以任意改变。（在理解对象的含义之前，初学者可以暂时这样理解）</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 变量使用前无需声明</span></span><br><span class="line">a = <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 类型可以随意改变</span></span><br><span class="line">b = <span class="number">1</span></span><br><span class="line">b = <span class="string">&quot;hello world!&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>当然，有时候我们为了方便计算或后续处理，需要对值进行类型转换，比如将 字符串”6” 转换成 数字6，或者将 浮点型6.66 转换成整数，以便于后续的计算。此时我们需要通过类型转换函数来实现。本节先介绍两个最常见的类型转换函数。</p>
-<ul>
-<li>int()</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># a为字符串&quot;1&quot;, b为整数2</span></span><br><span class="line">a = <span class="string">&quot;1&quot;</span></span><br><span class="line">b = <span class="number">2</span></span><br><span class="line"><span class="comment"># c = a + b (此时会报错，因为字符串不可与整数相加，类型不同)</span></span><br><span class="line"><span class="comment"># 通过 int() 函数来讲别的类型的变量或值，转换成整数类型</span></span><br><span class="line">c = <span class="built_in">int</span>(a) + b    <span class="comment"># 此时c为3，类型为整数型</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>str()</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># a为字符串&quot;1&quot;, b为整数2, 现在我们想要把a和b进行拼接</span></span><br><span class="line">a = <span class="string">&quot;1&quot;</span></span><br><span class="line">b = <span class="number">2</span></span><br><span class="line"><span class="comment"># c = a + b (此时会报错，因为字符串不可与整数相加，类型不同)</span></span><br><span class="line"><span class="comment"># 通过 str() 函数来讲别的类型的变量或值，转换成整数类型</span></span><br><span class="line">c = a + <span class="built_in">str</span>(b)	 <span class="comment"># 此时c为&quot;12&quot;，类型为字符串型</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="1-5-常见运算"><a href="#1-5-常见运算" class="headerlink" title="1.5 常见运算"></a>1.5 常见运算</h3><p>计算机设计的初衷就是为了进行计算。本节就让我们回归本质，了解一下Python中常见的运算吧。</p>
-<ul>
-<li>四则运算：</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 加法(+)</span></span><br><span class="line">a = <span class="number">1</span></span><br><span class="line">b = <span class="number">2</span></span><br><span class="line"><span class="built_in">print</span> (a + b)	<span class="comment"># 3</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 减法(-)</span></span><br><span class="line">a = <span class="number">100</span></span><br><span class="line">b = <span class="number">50</span></span><br><span class="line"><span class="built_in">print</span> (a - b)	<span class="comment"># 50</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 乘法(*)</span></span><br><span class="line">a = <span class="number">123</span></span><br><span class="line">b = <span class="number">456</span></span><br><span class="line"><span class="built_in">print</span>(a * b)	<span class="comment"># 56088</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 除法(/)</span></span><br><span class="line">a = <span class="number">10</span></span><br><span class="line">b = <span class="number">3</span></span><br><span class="line"><span class="built_in">print</span>(a / b)	<span class="comment"># 3.333...</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 整除(//)</span></span><br><span class="line"><span class="comment"># 有时候我们只需要一个数除以另外一个数的整数部分，此时应用整除符号</span></span><br><span class="line">a = <span class="number">10</span></span><br><span class="line">b = <span class="number">3</span></span><br><span class="line"><span class="built_in">print</span>(a // b)	<span class="comment"># 3</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>模运算：</p>
-<p>符号：百分号 “%”</p>
-<p>用于计算一个整数除以另外一个整数后的余数</p>
-</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="number">10</span>%<span class="number">3</span>)    <span class="comment"># 1	  </span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>乘方：</p>
-<p>符号：双星号”**”</p>
-</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="number">2</span>**<span class="number">5</span>)    <span class="comment"># 32</span></span><br></pre></td></tr></table></figure>
-
-
-
-<ul>
-<li>逻辑运算：</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 假如有2个表示真假的变量</span></span><br><span class="line">a = <span class="literal">True</span></span><br><span class="line">b = <span class="literal">False</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 和(and)</span></span><br><span class="line"><span class="comment"># 当切仅当a和b都是True，结果才为True</span></span><br><span class="line"><span class="built_in">print</span>(a <span class="keyword">and</span> b)    <span class="comment"># False</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 或(or)</span></span><br><span class="line"><span class="comment"># 只要有一方为True，结果就为True</span></span><br><span class="line"><span class="built_in">print</span>(a <span class="keyword">or</span> b)    <span class="comment"># True</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 非(not)</span></span><br><span class="line"><span class="comment"># 对变量的真假取相反的结果</span></span><br><span class="line"><span class="built_in">print</span>(<span class="keyword">not</span> b)    <span class="comment"># True</span></span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://jiaqingnie.github.io/python-tutorial/2021/07/01/Hello%20Python/" data-id="ckqkw865m00007dn620a1fpms" data-title="1.Hello Python" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/python-tutorial/tags/python/" rel="tag">python</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Python基本语法结构" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-Python基本语法结构" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/python-tutorial/2021/07/01/Python%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E7%BB%93%E6%9E%84/" class="article-date">
   <time class="dt-published" datetime="2021-07-01T03:46:22.650Z" itemprop="datePublished">2021-07-01</time>
@@ -208,8 +89,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/python-tutorial/2021/07/01/Python%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E7%BB%93%E6%9E%84/">2.Python基本语法结构</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      2.Python基本语法结构
     </h1>
   
 
@@ -337,97 +218,28 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-为何要学Python" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/python-tutorial/2021/07/01/%E4%B8%BA%E4%BD%95%E8%A6%81%E5%AD%A6Python/" class="article-date">
-  <time class="dt-published" datetime="2021-07-01T03:46:22.650Z" itemprop="datePublished">2021-07-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/python-tutorial/2021/07/01/Hello%20Python/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
+          1.Hello Python
+        
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/python-tutorial/2021/07/01/%E4%B8%BA%E4%BD%95%E8%A6%81%E5%AD%A6Python/">前言：为何要学Python</a>
-    </h1>
   
+    <a href="/python-tutorial/2021/07/01/%E4%B8%BA%E4%BD%95%E8%A6%81%E5%AD%A6Python/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">前言：为何要学Python</div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <ol>
-<li><p>当今内卷日益严重的大环境下，似乎掌握一门编程语言成为了一件必须的事情。</p>
-</li>
-<li><p>Python以其语法简单，容易上手的特点，十分适合作为编程小白的入门级编程语言去学习。完成相同的工作量，别的编程语言或许需要若干步，但Python往往需要只需要很短的步数，并且简短明了。以下是Python和Java对于数组（列表）赋值的对比：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">list1 = [i <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">20</span>)]</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] array1 = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">20</span>];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">20</span>; i++) &#123;</span><br><span class="line">    array1[i] = i;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>或许有的读者对于数组和列表的概念还不是很清楚，不过这两段代码的长度的差距还是能够说明问题的。关于python中list这一基本数据结构，笔者后续会着重讲解。</p>
-</li>
-<li><p>Python作为一门胶水化语言，功能强大，拓展性强，环境搭建相对容易。可以边实践边学习，容易更加熟练掌握。</p>
-</li>
-<li><p>以下是几大主流编程语言创始人的对比，仅通过他们发量的差别，相比读者就可以看出来Python这门语言的优越性了！</p>
-</li>
-</ol>
-<p><img src="https://raw.githubusercontent.com/JiaqingNie/image/main/4ju7og7t5ser.jpg" alt="编程语言创始人对比"> </p>
-<h3 id="Python具体可以用来做些什么"><a href="#Python具体可以用来做些什么" class="headerlink" title="Python具体可以用来做些什么"></a>Python具体可以用来做些什么</h3><ol>
-<li>可以用来写一些脚本，代替自己来做一些枯燥而重复的工作，实现自动化办公。（比如从csv或excel表格中读取数据并进行计算，将结果写入新的文件当中）</li>
-<li>借助python强大的第三方库进行数据分析。</li>
-<li>网络爬虫。（笔者就曾批量下载过网络上的数百首音乐和上千章节的小说，只要网速可以，几乎瞬间就可以完成）</li>
-<li>通过Django 或 Falsk 从事web开发。</li>
-<li>凡所应有，无所不有……</li>
-</ol>
-<h3 id="学习Python的恰当方式"><a href="#学习Python的恰当方式" class="headerlink" title="学习Python的恰当方式"></a>学习Python的恰当方式</h3><ol>
-<li>认真阅读讲义，理解其行文逻辑。</li>
-<li>文中所展示的代码，强烈建议读者也能够亲自敲写一遍，毕竟，学习编程最重要的是亲自上手去实践，仅仅听理论作用甚微。</li>
-<li>认真思考并完成每节课后练习题。</li>
-</ol>
-<h3 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h3><p>本文推荐Anaconda+jupyter notebook的环境搭建方式。</p>
-<ol>
-<li><p>在浏览器上前往此链接：<a target="_blank" rel="noopener" href="https://www.anaconda.com/products/individual#Downloads">https://www.anaconda.com/products/individual#Downloads</a></p>
-</li>
-<li><p>选择适合自己电脑系统的软件版本</p>
-<ul>
-<li><p>6Windows（64位）环境下选择 <a target="_blank" rel="noopener" href="https://repo.anaconda.com/archive/Anaconda3-2021.05-Windows-x86_64.exe">64-Bit Graphical Installer </a></p>
-</li>
-<li><p>MacOS环境下选择 <a target="_blank" rel="noopener" href="https://repo.anaconda.com/archive/Anaconda3-2021.05-MacOSX-x86_64.pkg">64-Bit Graphical Installer</a></p>
-</li>
-</ul>
-</li>
-<li><p>安装并运行Anaconda</p>
-</li>
-<li><p>在HOME当中选择jupyter notebook并运行，此时浏览器会自动开启，显示类似以下的界面</p>
-</li>
-</ol>
-<p><img src="https://raw.githubusercontent.com/JiaqingNie/image/main/%E6%88%AA%E5%B1%8F2021-06-22%2019.25.00.jpg"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://jiaqingnie.github.io/python-tutorial/2021/07/01/%E4%B8%BA%E4%BD%95%E8%A6%81%E5%AD%A6Python/" data-id="ckqkw866100047dn61ppheqmy" data-title="前言：为何要学Python" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/python-tutorial/tags/python/" rel="tag">python</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
 
 
 </section>
